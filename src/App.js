@@ -33,16 +33,17 @@ export default class App extends Component {
 <Navbar bg="light" variant="light">
     <Navbar.Brand href="#home">Shokla6ah</Navbar.Brand>
     <Nav className="ml-auto">
-      <NavLink className="nav-link" to="home">Home</NavLink>
+      <NavLink className="nav-link" to="">Home</NavLink>
 
       <NavLink className="nav-link" to="Designs">Designs</NavLink>
     </Nav>
   
   </Navbar>
 <Switch>
-<Route path="/home" component={Editing}/>
-
 <Route path="/Designs" component={Designs}/>
+
+<Route path="/" component={Editing}/>
+
 
   
 </Switch>

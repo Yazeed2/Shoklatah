@@ -49,3 +49,10 @@
   padding: 30px;
   background-color: white;
 }
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px;
+width: 80%;
+margin: 0 auto;
+}

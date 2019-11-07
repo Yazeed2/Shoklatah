@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar,Form,FormControl,Button,Nav} from 'react-bootstrap'
 import domtoimage from 'dom-to-image';
-var urls = ''
+var urls = null
 export default class Thing extends Component {
     constructor(props) {
         super(props);
@@ -9,7 +9,9 @@ export default class Thing extends Component {
             value: '',
             text: '',
             on: '',
-            url: ''
+            url: '',
+            btn:'Save!',
+            go: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -38,17 +40,30 @@ export default class Thing extends Component {
         }else{
             window.localStorage.setItem('meme',JSON.stringify([]))
         }
-        var node = document.getElementById('meme');
- 
+     
+ if (this.state.btn == 'Save!'){
+    this.setState({
+        btn:'Are you sure?',
+        go:'#download'
+    })
+ }else if(this.state.btn == 'Are you sure?'){
+
+    this.setState({
+        btn:'Save!',
+        go: ''
+        
+    })
+ }
+ var node = document.getElementById('meme');
 domtoimage.toPng(node)
     .then(function (dataUrl) {
         var img = new Image();
         urls = dataUrl
 
         img.src = dataUrl;
-        console.log(urls);
+      
         
-        document.body.appendChild(img);
+        // document.body.appendChild(img);
 
     })
     .catch(function (error) {
@@ -70,7 +85,8 @@ domtoimage.toPng(node)
     style={{'width':'90%', 'margin':'70px auto'}}
 
      />
-      <Button  type="submit"  variant="outline-success" >Save!</Button>
+      <Button  type="submit"  variant="outline-success" href={this.state.go} >{this.state.btn}</Button>
+
     </Form>
     </form>
 
@@ -79,9 +95,10 @@ domtoimage.toPng(node)
                 {this.state.on === 'yup'? <h1 className='ttl'>{this.state.value}</h1>:''}
                  
                     <img src={this.props.image} style={{ 'width': '100%' }} />
-                </div>
-
-       <a href={urls} download="Meme.png">download mate :))))))))))))))))))))))))))</a> 
+                </div><div id="download">
+                { urls !== null ? <Button variant="outline-success" href={urls} download="Meme.png"  style={{width:'100%'}} >  <a style={{color:'white'}}>Download
+                </a> </Button> : ''}
+</div>
             </div>
         )
     }

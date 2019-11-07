@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shokla6ah
 
-## Available Scripts
+A platform that gives comedy a second chance by giving comedians a good platform to make qualty memes.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Using react to make one page application that allows users to edit on photos giving them chance to make qualty content 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Technical Used
+What technologies you used that helped you build this project. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+Example:
 
-### `npm test`
+- React
+- Bootstrap with react
+- Ajax (axios) for API
+- React Router DOM
+- DOM to Image
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Wireframes
 
-### `npm run build`
+![](1.png)
+![](2.png)
+![](3.png)
+![](4.png)
+![](5.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Stories
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+As a user I can make qualty memes 
+As a user I can choose an image
+As a user I can put a title to an image 
+As a user I can edit my designs
+As a user I can have fun 
+As a user I can challeng my frieds 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+Example:
 
-### `npm run eject`
+User must be able to:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- View Images
+- Have fun 
+- Create memes 
+- Download memes
+- Make content
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Planning and Development Process
 
-## Learn More
+I started with a simple sketch of the end product and after making the first prototype I redesigned the page with a great color scheme then I removed some bugs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Problem-Solving Strategy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- print any result
+- trail and error 
+- trail and error 
+- trail and error again and agian 
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Unsolved problems
 
-### Analyzing the Bundle Size
+None :) 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## APIs Used
 
-### Making a Progressive Web App
+- Unsplash
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- people are amazing
+- I like helping others
+- helping others delais me but its okay because I like it and I am up for the challenge 
+- we have awsome instructors that gives you technical and emotional support
+---
 
-### Deployment
+ ## References
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- (https://unsplash.com/documentation#creating-a-developer-account)
+- (https://docs.npmjs.com/
+- (https://www.w3schools.com/css/css_grid.asp)
+- (https://www.npmjs.com/package/dom-to-image)
+- (https://stackoverflow.com/questions/2408146/href-image-link-download-on-click)
